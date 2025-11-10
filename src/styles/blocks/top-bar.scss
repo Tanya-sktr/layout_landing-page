@@ -1,15 +1,32 @@
 .top-bar {
+  @include grid-margin;
+
+  padding-block: 24px;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 24px 20px;
-}
+  align-items: center;
 
-.top-bar__icons {
-  display: flex;
-  gap: 24px;
-}
+  @include on-tablet {
+    padding-block: 64px;
+  }
 
-.top-bar__logo {
-  display: flex;
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo {
+    height: 16px;
+
+    @include hover(transform, scale(1.2));
+
+    @include on-tablet {
+      height: 24px;
+    }
+  }
 }

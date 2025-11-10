@@ -1,0 +1,16 @@
+.body {
+  overflow-x: hidden;
+}
+
+.main {
+  &__content {
+    display: grid;
+    row-gap: 92px;
+    padding-block: 92px;
+
+    @include on-tablet {
+      padding-block: 120px;
+      row-gap: 120px;
+    }
+  }
+}

@@ -1,23 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   line-height: 140%;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
 
   background-color: rgba(29, 29, 29, 1);
+
+  &__body {
+    margin: 0;
+    min-width: 320px;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transition: all 0.3s;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: all;
+    }
+  }
 }
 
-.page__body {
-  margin: 0;
-}
-
-.page__menu {
-  pointer-events: none;
-
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-
-  opacity: 0;
+.page:has(.page__menu:target) {
+  overflow: hidden; /* not to scroll the page */
 }
