@@ -13,7 +13,6 @@
 
     @include on-tablet {
       height: 480px;
-      transform: translateX(-15%);
     }
 
     @include on-desktop {

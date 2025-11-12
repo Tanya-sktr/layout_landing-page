@@ -1,7 +1,13 @@
 .header {
-  background-image: url('../images/header-bg.png');
-  background-position: right bottom;
+  background-image: url('/src/images/header\,2x.png');
+  background-position: 85%;
   background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  @include on-tablet {
+    background-position: 50%;
+  }
 
   &__content {
     height: 100vh;
@@ -11,14 +17,13 @@
     justify-content: space-between;
   }
 
-  &__top {
+  /* &__top-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
 
   &__title {
-    margin: 0;
     font-size: 36px;
     font-weight: 700;
     line-height: 100%;
@@ -27,7 +32,11 @@
     vertical-align: middle;
 
     @include on-tablet {
-      font-size: 40px;
+      font-size: 64px;
+    }
+
+    @include on-desktop {
+      font-size: 80px;
     }
   }
 
@@ -35,10 +44,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 88px;
+    margin-bottom: 88px;
 
     @include on-tablet {
-      padding-bottom: 64px;
+      margin-bottom: 130px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 203px;
     }
   }
 }
