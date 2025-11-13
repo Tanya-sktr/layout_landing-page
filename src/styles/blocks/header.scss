@@ -1,5 +1,5 @@
 .header {
-  background-image: url('/src/images/header\,2x.png');
+  background-image: url('/src/images/header-bg.png');
   background-position: 85%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,12 +16,6 @@
     flex-direction: column;
     justify-content: space-between;
   }
-
-  /* &__top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
 
   &__title {
     font-size: 36px;

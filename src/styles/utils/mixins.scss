@@ -23,24 +23,21 @@
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
-  margin-inline: 20px;
 
   @include on-tablet {
     --columns: 6;
 
     column-gap: 24px;
-    margin-inline: 72px;
   }
 
   @include on-desktop {
     --columns: 12;
 
     column-gap: 24px;
-    margin-inline: 120px;
   }
 }
 
-@mixin grid-margin {
+/* @mixin grid-margin {
   margin-inline: 20px;
 
   @include on-tablet {
@@ -51,3 +48,4 @@
     margin-inline: 120px;
   }
 }
+*/
