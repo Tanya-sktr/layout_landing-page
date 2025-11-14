@@ -54,15 +54,6 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 140%;
-    margin-inline: 20px;
-
-    @include on-tablet {
-      margin-inline: 72px;
-    }
-
-    @include on-desktop {
-      margin-inline: 120px;
-    }
   }
 
   &__benefits {
@@ -70,14 +61,5 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    margin-inline: 20px;
-
-    @include on-tablet {
-      margin-inline: 72px;
-    }
-
-    @include on-desktop {
-      margin-inline: 120px;
-    }
   }
 }
